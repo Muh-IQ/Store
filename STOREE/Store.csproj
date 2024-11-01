@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F0626B6-E10C-4005-9DB3-B69E3F040817}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Store</RootNamespace>
+    <AssemblyName>Store</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Spelling Check V2">
+      <HintPath>..\..\Auto Correct All Exam\Spelling Check V2\Spelling Check V2\bin\Debug\Spelling Check V2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsUtility.cs" />
+    <Compile Include="ctrlAutoCorrect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlAutoCorrect.Designer.cs">
+      <DependentUpon>ctrlAutoCorrect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlDisplayProductsAsLinear.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlDisplayProductsAsLinear.Designer.cs">
+      <DependentUpon>ctrlDisplayProductsAsLinear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlPaymentMethod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlPaymentMethod.Designer.cs">
+      <DependentUpon>ctrlPaymentMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlProductInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlProductInformation.Designer.cs">
+      <DependentUpon>ctrlProductInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlProductShowInMainForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlProductShowInMainForm.Designer.cs">
+      <DependentUpon>ctrlProductShowInMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlProductsPromotion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlProductsPromotion.Designer.cs">
+      <DependentUpon>ctrlProductsPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlShowComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlShowComment.Designer.cs">
+      <DependentUpon>ctrlShowComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlNotFoundComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlNotFoundComment.Designer.cs">
+      <DependentUpon>ctrlNotFoundComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlProduct.Designer.cs">
+      <DependentUpon>ctrlProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlProductCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlProductCard.Designer.cs">
+      <DependentUpon>ctrlProductCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlPurchasedProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlPurchasedProduct.Designer.cs">
+      <DependentUpon>ctrlPurchasedProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlShowImagesForProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlShowImagesForProduct.Designer.cs">
+      <DependentUpon>ctrlShowImagesForProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlShowPages.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlShowPages.Designer.cs">
+      <DependentUpon>ctrlShowPages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlTopRatedProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlTopRatedProducts.Designer.cs">
+      <DependentUpon>ctrlTopRatedProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBasket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBasket.Designer.cs">
+      <DependentUpon>frmBasket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateAccount.Designer.cs">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditCustomerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditCustomerData.Designer.cs">
+      <DependentUpon>frmEditCustomerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginOrCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginOrCreate.Designer.cs">
+      <DependentUpon>frmLoginOrCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMyPurchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMyPurchases.Designer.cs">
+      <DependentUpon>frmMyPurchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayment.Designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfileMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfileMenu.Designer.cs">
+      <DependentUpon>frmProfileMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShop.Designer.cs">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowDetails.Designer.cs">
+      <DependentUpon>frmShowDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWait.Designer.cs">
+      <DependentUpon>frmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ctrlAutoCorrect.resx">
+      <DependentUpon>ctrlAutoCorrect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlDisplayProductsAsLinear.resx">
+      <DependentUpon>ctrlDisplayProductsAsLinear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlPaymentMethod.resx">
+      <DependentUpon>ctrlPaymentMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlProductInformation.resx">
+      <DependentUpon>ctrlProductInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlProductShowInMainForm.resx">
+      <DependentUpon>ctrlProductShowInMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlProductsPromotion.resx">
+      <DependentUpon>ctrlProductsPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlShowComment.resx">
+      <DependentUpon>ctrlShowComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlNotFoundComment.resx">
+      <DependentUpon>ctrlNotFoundComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlProduct.resx">
+      <DependentUpon>ctrlProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlProductCard.resx">
+      <DependentUpon>ctrlProductCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlPurchasedProduct.resx">
+      <DependentUpon>ctrlPurchasedProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlShowImagesForProduct.resx">
+      <DependentUpon>ctrlShowImagesForProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlShowPages.resx">
+      <DependentUpon>ctrlShowPages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlTopRatedProducts.resx">
+      <DependentUpon>ctrlTopRatedProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBasket.resx">
+      <DependentUpon>frmBasket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateAccount.resx">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCustomerData.resx">
+      <DependentUpon>frmEditCustomerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginOrCreate.resx">
+      <DependentUpon>frmLoginOrCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMyPurchases.resx">
+      <DependentUpon>frmMyPurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfileMenu.resx">
+      <DependentUpon>frmProfileMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShop.resx">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowDetails.resx">
+      <DependentUpon>frmShowDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWait.resx">
+      <DependentUpon>frmWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Store.Business\Store.Business.csproj">
+      <Project>{b55dfcea-a0e3-4a34-b2c0-ec8032576a44}</Project>
+      <Name>Store.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iphone 12.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in_stock-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-02-07_17-15-04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-02-07_17-14-58.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 14.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone_14-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saman pb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saman_pb-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satr 0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satr 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satr 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satr 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satr 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satr_1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satr_5-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satr_4-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satr_3-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satr_0-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-card%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-card%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Credit_Cards-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-on-delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-on-delivery%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-on-delivery%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasing%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasing%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase%281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset-password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line_2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

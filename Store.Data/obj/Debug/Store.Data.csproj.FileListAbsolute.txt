@@ -1,0 +1,12 @@
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\Store.Data\bin\Debug\Store.Data.dll
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\Store.Data\bin\Debug\Store.Data.pdb
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\Store.Data\obj\Debug\Store.Data.csproj.AssemblyReference.cache
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\Store.Data\obj\Debug\Store.Data.csproj.CoreCompileInputs.cache
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\Store.Data\obj\Debug\Store.Data.dll
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\Store.Data\obj\Debug\Store.Data.pdb
+C:\Users\Asus\Desktop\Store-01\Store.Data\bin\Debug\Store.Data.dll
+C:\Users\Asus\Desktop\Store-01\Store.Data\bin\Debug\Store.Data.pdb
+C:\Users\Asus\Desktop\Store-01\Store.Data\obj\Debug\Store.Data.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Store-01\Store.Data\obj\Debug\Store.Data.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Store-01\Store.Data\obj\Debug\Store.Data.dll
+C:\Users\Asus\Desktop\Store-01\Store.Data\obj\Debug\Store.Data.pdb

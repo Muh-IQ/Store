@@ -1,0 +1,25 @@
+D:\C# Projects\STOREE\STOREE\obj\Debug\STOREE.csproj.AssemblyReference.cache
+D:\C# Projects\STOREE\STOREE\obj\Debug\STOREE.Properties.Resources.resources
+D:\C# Projects\STOREE\STOREE\obj\Debug\STOREE.csproj.GenerateResource.cache
+D:\C# Projects\STOREE\STOREE\obj\Debug\STOREE.csproj.CoreCompileInputs.cache
+D:\C# Projects\STOREE\STOREE\bin\Debug\STOREE.exe.config
+D:\C# Projects\STOREE\STOREE\bin\Debug\STOREE.exe
+D:\C# Projects\STOREE\STOREE\bin\Debug\STOREE.pdb
+D:\C# Projects\STOREE\STOREE\bin\Debug\Guna.UI2.dll
+D:\C# Projects\STOREE\STOREE\obj\Debug\STOREE.frmMain.resources
+D:\C# Projects\STOREE\STOREE\obj\Debug\STOREE.csproj.CopyComplete
+D:\C# Projects\STOREE\STOREE\obj\Debug\STOREE.exe
+D:\C# Projects\STOREE\STOREE\obj\Debug\STOREE.pdb
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\bin\Debug\Guna.UI2.dll
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\obj\Debug\STOREE.csproj.AssemblyReference.cache
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\obj\Debug\STOREE.frmMain.resources
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\obj\Debug\STOREE.csproj.GenerateResource.cache
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\obj\Debug\STOREE.csproj.CoreCompileInputs.cache
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\obj\Debug\STOREE.csproj.CopyComplete
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\obj\Debug\STOREE.frmShop.resources
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\bin\Debug\Store.exe.config
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\bin\Debug\Store.exe
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\bin\Debug\Store.pdb
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\obj\Debug\Store.Properties.Resources.resources
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\obj\Debug\Store.exe
+C:\Users\aaaa_\Desktop\MyStoreProject\STOREE\STOREE\obj\Debug\Store.pdb
